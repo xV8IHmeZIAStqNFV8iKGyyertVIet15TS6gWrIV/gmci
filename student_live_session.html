@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function change_stars(class_name, n) {
+            let stars = document.getElementsByClassName(class_name);
+            for (curr = 0; curr < stars.length; curr++) {
+                if (curr < n) {
+                    stars[curr].innerHTML = "&#9733;";
+                } else {
+                    stars[curr].innerHTML = "&#9734;";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <button onclick="location.href = 'login.html';">
+            <i class='fa fa-sign-out'></i> Log out
+        </button>
+    </div>
+
+    <div class="container container-center">
+        <div class="border">
+            <h2>Grundlagen der Mensch-Computer-Interaktion</h2>
+            <div class="live-grid">
+                <div class="live-grid-half">
+                    Presentation: <br>
+                    <span class="star star-presentation" onclick="change_stars('star-presentation', 1)">&#9734;</span>
+                    <span class="star star-presentation" onclick="change_stars('star-presentation', 2)">&#9734;</span>
+                    <span class="star star-presentation" onclick="change_stars('star-presentation', 3)">&#9734;</span>
+                    <span class="star star-presentation" onclick="change_stars('star-presentation', 4)">&#9734;</span>
+                    <span class="star star-presentation" onclick="change_stars('star-presentation', 5)">&#9734;</span>
+                    <br>
+
+                    Volume: <br>
+                    <span class="star star-volume" onclick="change_stars('star-volume', 1)">&#9734;</span>
+                    <span class="star star-volume" onclick="change_stars('star-volume', 2)">&#9734;</span>
+                    <span class="star star-volume" onclick="change_stars('star-volume', 3)">&#9734;</span>
+                    <span class="star star-volume" onclick="change_stars('star-volume', 4)">&#9734;</span>
+                    <span class="star star-volume" onclick="change_stars('star-volume', 5)">&#9734;</span>
+                    <br>
+
+                    Speed: <br>
+                    <span class="star star-speed" onclick="change_stars('star-speed', 1)">&#9734;</span>
+                    <span class="star star-speed" onclick="change_stars('star-speed', 2)">&#9734;</span>
+                    <span class="star star-speed" onclick="change_stars('star-speed', 3)">&#9734;</span>
+                    <span class="star star-speed" onclick="change_stars('star-speed', 4)">&#9734;</span>
+                    <span class="star star-speed" onclick="change_stars('star-speed', 5)">&#9734;</span>
+                    <br>
+                </div>
+                <div class="live-grid-half emoji-grid">
+                    <button type="button" class="emoji emoji-grid-button">&#128512;</button>
+                    <button type="button" class="emoji emoji-grid-button">&#10067;</button>
+                    <button type="button" class="emoji emoji-grid-button">&#128034;</button>
+                    <button type="button" class="emoji emoji-grid-button">&#128007;</button>
+                    <button type="button" class="emoji emoji-grid-button">&#128545;</button>
+                    <button type="button" class="emoji emoji-grid-button">&#127813;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <button type="button" class="back-button"
+        onclick="location.href = 'student_course_overview.html';">&LongLeftArrow;</button>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+</head>
+
+<body>
+    <div class="top">
+        <button onclick="location.href = 'login.html';">
+            <i class='fa fa-sign-out'></i> Log out
+        </button>
+    </div>
+
+    <div class="container container-center">
+        <div class="border">
+            Name: <input type="text" class="inline" value="Grundlagen der Mensch-Computer-Interaktion" size="43"> <br>
+            Course Type:
+            <input type="radio" class="inline" name="type" id="weekly">
+            <label for="weekly">Weekly</label>
+            <input type="radio" class="inline" name="type" id="one-time" value="One Time">
+            <label for="one-time">One Time</label>
+            <br>
+            Time: <input type="time" class="inline"> <br>
+            First Session: <input type="date" class="inline">
+            <br>
+
+            <br>
+
+            <button type="button" onclick="location.href = 'prof_edit_2.html';">Continue</button>
+        </div>
+    </div>
+
+    <br>
+    <button type="button" class="back-button"
+        onclick="location.href = 'prof_all_courses.html';">&LongLeftArrow;</button>
+</body>
+
+</html>

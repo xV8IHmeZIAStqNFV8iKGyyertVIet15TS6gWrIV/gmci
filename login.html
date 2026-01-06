@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='login.css'> -->
+    <style>
+        input {
+            display: block;
+        }
+
+        .login-window {
+            border: 2px solid rgb(95 97 110);
+            border-radius: 0.5em;
+            padding: 20px;
+        }
+
+        .container {
+            height: 720px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function login() {
+            if (document.getElementById('Luh-ID').value.includes('P')) {
+                location.href = 'prof_all_courses.html';
+            } else {
+                location.href = 'student_all_courses.html';
+            }
+        }
+    </script>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-window">
+            Luh-ID:
+            <input type="text" id="Luh-ID" name="Luh-ID"> <br>
+            WebSSO-Passwort:
+            <input type="password" name="password" id="password"> <br>
+            <input type="button" onclick="login()" value="Login" />
+        </div>
+    </div>
+</body>
+
+</html>

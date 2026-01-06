@@ -1,0 +1,103 @@
+.top {
+    display: flex;
+    justify-content: right;
+}
+
+input {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.container {
+    padding: 20px;
+    height: 550px;
+}
+
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    border: 2px solid rgb(95 97 110);
+    border-radius: 0.5em;
+    padding: 20px;
+}
+
+.live-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.live-grid-half {
+    width: 30vw;
+}
+
+.emoji-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.emoji-grid-button {
+    margin: 5px;
+}
+
+.session-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.session-grid-button {
+    height: 60px;
+    margin: 10px;
+}
+
+.back-button {
+    font-size: xx-large;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.emoji {
+    font-size: 7em;
+}
+
+.moving-emoji-space {
+    height: 50vh;
+    position: relative;
+}
+
+@keyframes moving-emoji {
+    0% {
+        opacity: 0;
+        translate: 0 25vh;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+
+    50% {
+        opacity: 0;
+        translate: 0px -25vh;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.moving-emoji {
+    position: absolute;
+    opacity: 0;
+    animation: moving-emoji 3s infinite;
+}
