@@ -66,6 +66,10 @@ input {
     font-size: 2em;
 }
 
+.star-prof {
+    cursor: default;
+}
+
 .emoji {
     font-size: 7em;
 }
