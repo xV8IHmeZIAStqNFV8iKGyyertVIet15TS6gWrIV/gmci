@@ -105,3 +105,7 @@ input {
     opacity: 0;
     animation: moving-emoji 3s infinite;
 }
+
+.logout {
+    font-size: large;
+}
