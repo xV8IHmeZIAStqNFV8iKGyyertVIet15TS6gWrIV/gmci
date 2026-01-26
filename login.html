@@ -12,6 +12,11 @@
             display: block;
         }
 
+        .inline {
+            display: inline;
+        }
+
+
         .login-window {
             border: 2px solid rgb(95 97 110);
             border-radius: 0.5em;
@@ -33,6 +38,14 @@
                 location.href = 'student_all_courses.html';
             }
         }
+        function toggleVisibility() {
+            var pass = document.getElementById("password");
+            if (pass.type === "password") {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
     </script>
     <!-- <script src='main.js'></script> -->
 </head>
@@ -43,7 +56,10 @@
             Luh-ID:
             <input type="text" id="Luh-ID" name="Luh-ID"> <br>
             WebSSO-Passwort:
-            <input type="password" name="password" id="password"> <br>
+            <input type="password" name="password" id="password">
+            <input type="checkbox" class="inline" id="toggle" name="toggle" onclick="toggleVisibility();">
+            <label for="toggle">Show password</label>
+            <br> <br>
             <input type="button" onclick="login()" value="Login" />
         </div>
     </div>
