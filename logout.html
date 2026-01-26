@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function back() {
+            let params = new URLSearchParams(document.location.search);
+            let ret = params.get('ret');
+            location.href = ret;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container container-center">
+        <div class="border">
+            <h2>Do you want to log out?</h2>
+            <button type="button" class="inline" onclick="location.href = 'login.html';">Log out</button>
+            <button type="button" class="inline" onclick="back();">Cancel</button>
+        </div>
+    </div>
+
+    <br>
+    <button type="button" class="back-button" onclick="back();">&LongLeftArrow;</button>
+</body>
+
+</html>
